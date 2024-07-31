@@ -1,5 +1,5 @@
 1)
-/***HTTP***/
+/***HTTP MODULEEEE***/
 var http =require('http');
 http.createServer((req,res)=>{
     res.write(req.url);  (or)   //res.write('helloworld');
@@ -23,7 +23,7 @@ http.createServer((req,res)=>{
      })
 }).listen(8083)  
 output=welcome!!
-note:we have to read a file through server already created in you system
+note:we have to read a file through server already created in you system!!!
 
 3)
 /***append***/
@@ -38,7 +38,7 @@ http.createServer((req,res)=>{
      })
 }).listen(8083)
 output=welcome!!Thank you
-note:using append method we have to add a text on a text.txt file using fs.js
+note:using append method we have to add a text on a text.txt file using fs.js!!!
 
 4)
 /***fileWrite***/
@@ -53,4 +53,18 @@ http.createServer((req,res)=>{
      })
 }).listen(8081)
 output=moyee moyee
-note:we  have to entire change the text into new text using fs.js
+note:we  have to entire change the text into new text using fs.js!!!
+
+5)
+/***unlink***/
+file name=fs.js
+var http =require('http');
+var fs = require('fs');
+http.createServer((req,res)=>{
+    fs.unlink('text.txt',(err)=>{
+        if(err)throw err;
+        console.log("file delected");
+     })
+}).listen(8081)
+output=delete the text.txt
+note:we have to delete the file like text.txt through fs.js file!!!
