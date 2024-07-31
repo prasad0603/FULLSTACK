@@ -1,5 +1,13 @@
 1)
 /***HTTP***/
+var http =require('http');
+http.createServer((req,res)=>{
+    res.write(req.url);  (or)   //res.write('helloworld');
+    res.end();
+    console.log('server loading')
+}).listen(8081)
+output=localhost:8081/product    (or)  //heloworld
+note:creating the server and display the information on the web page!!!
 
 
 2)
